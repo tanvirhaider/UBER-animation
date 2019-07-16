@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 
 body {
     margin: 0px;
@@ -6,12 +8,19 @@ body {
 }
 
 section {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     .space-filler {
         position: relative;
         width: 100%;
-        height: 50px;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+
     }
 }
 
@@ -39,21 +48,27 @@ section {
     }
 
     #box-1-hourhand {
-        background-image: url(../images/hand-hour.png);
+       // background-image: url(../images/hand-hour.png);
+        background-color: #666666;
+        transform-origin: 0% 50%;
         position: absolute;
         width: calc(40px/2);
         height: 3px;
         left: 88px;
         top: 113px;
+        transform: rotate(-90deg);
     }
 
     #box-1-minutehand {
-        background-image: url(../images/hand-minute.png);
+        //background-image: url(../images/hand-minute.png);
+        background-color: #666666;
+        transform-origin: 0% 50%;
         position: absolute;
         width: calc(70px/2);
         height: 2px;
         left: 88px;
         top: 113px;
+        transform: rotate(-90deg);
     }
 }
 
@@ -131,24 +146,24 @@ section {
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
-        clip: rect(0px, 250px, 250px, 130px);
+        clip: rect(250px, 250px, 250px, 130px);
 
     }
 
-    #svg-element {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+    // #svg-element {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
 
-        .st0{
-            clip-path:url(#SVGID_2_);
-        }
-        .st1{
-            clip-path:url(#SVGID_4_);fill:#666666;
-            width: 66px;
-            height: 137px;
-        }
-    }
+    //     .st0{
+    //         clip-path:url(#SVGID_2_);
+    //     }
+    //     .st1{
+    //         clip-path:url(#SVGID_4_);fill:#666666;
+    //         width: 66px;
+    //         height: 137px;
+    //     }
+    // }
 }
 
 
@@ -164,6 +179,30 @@ section {
         background-color: #feeedb;
        
     }
+
+    #box-4-stearing {
+        background-image: url(../images/stearing-hand.png);
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 130px;
+        top: 130px;
+    }
+
+    #box-4-seat-belf {
+        // seat-belt.png
+        background-image: url(../images/seat-belt.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        clip: rect(0px, 250px, 120px, 10px);
+    }
+
+    // 
 }
 
 

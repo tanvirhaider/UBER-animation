@@ -33,7 +33,7 @@
 		},
 	"/app/images/driver-bg.png": {
 		"ft": 32768,
-		"iS": 9531,
+		"iS": 8743,
 		"oA": 0,
 		"oAP": "/build/images/driver-bg.png",
 		"oF": 0,
@@ -75,6 +75,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/app/images/seat-belt.png": {
+		"ft": 32768,
+		"iS": 1937,
+		"oA": 0,
+		"oAP": "/build/images/seat-belt.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/images/star-bg.png": {
 		"ft": 32768,
 		"iS": 235,
@@ -94,6 +105,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/app/images/stearing-hand.png": {
+		"ft": 32768,
+		"iS": 6858,
+		"oA": 0,
+		"oAP": "/build/images/stearing-hand.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
