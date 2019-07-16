@@ -10,12 +10,6 @@ var animation2initiated = false;
 var animation3initiated = false;
 var animation4initiated = false;
 
-function killAll() {// animation1.kill();
-  // animation2.kill();
-  // animation3.kill();
-  // animation4.kill();
-}
-
 function startAnimation1() {
   if (animation1initiated) {
     animation1.play();
@@ -96,12 +90,44 @@ function startAnimation4() {
   } else {
     animation4initiated = true;
     animation4 = new TimelineMax({
-      repeatDelay: 2
+      repeatDelay: 0
     });
     animation4.to("#box-4-seat-belf", 3, {
       css: {
         clip: "rect(0px, 250px, 180px, 0px"
       }
+    });
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: 3
+    }, "-=3");
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: -3
+    }, "-=2.5");
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: 3
+    }, "-=2");
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: -3
+    }, "-=1.5");
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: 3
+    }, "-=1");
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: -3
+    }, "-=0.5");
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: 3
+    });
+    animation4.to("#box-4-stearing", 0.5, {
+      ease: Power0.easeNone,
+      rotation: -3
     });
     animation4.repeat(-1).yoyo(true).play();
   }

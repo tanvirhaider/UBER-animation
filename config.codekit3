@@ -119,6 +119,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/app/images/stearing-over.png": {
+		"ft": 32768,
+		"iS": 2818,
+		"oA": 0,
+		"oAP": "/build/images/stearing-over.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/images/watch-bg.png": {
 		"ft": 32768,
 		"iS": 12734,

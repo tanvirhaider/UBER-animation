@@ -10,6 +10,10 @@ body {
 section {
     padding-left: 50px;
     padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 600px;
 
     .space-filler {
         position: relative;
@@ -200,6 +204,20 @@ section {
         background-size: contain;
         background-repeat: no-repeat;
         clip: rect(0px, 250px, 120px, 10px);
+    }
+
+    .clip-svg {
+        clip-path: url(#stearing-mask);
+    }
+
+    #box-4-stearing-cover {
+        background-image: url(../images/stearing-over.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 0px;
     }
 
     // 
