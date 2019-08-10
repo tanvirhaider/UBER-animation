@@ -63,7 +63,7 @@ function startAnimation3 () {
         animation3initiated = true;
         animation3 = new TimelineMax();
         //animation3.set("#bag-fill",{clip:"rect(250px, 250px, 250px, 130px"})
-        animation3.to("#bag-fill",5,{css:{clip:"rect(80px, 250px, 250px, 130px"}})
+        animation3.to(["#bag-fill","#moneysign"],5,{css:{clip:"rect(80px, 250px, 250px, 130px"}})
         animation3.repeat(-1).yoyo(true).play();
     }
    
@@ -130,7 +130,7 @@ var controller = new ScrollMagic.Controller();
         })
 
         .on("leave", function (e) {
-           // $("#state").text(e.type == "enter" ? "inside" : "outside");
+           $("#state").text(e.type == "enter" ? "inside" : "outside");
            pauseAnimation1 ();
            
         })
@@ -152,7 +152,7 @@ var controller = new ScrollMagic.Controller();
             startAnimation2 ();
         })
         .on("leave", function (e) {
-            // $("#state").text(e.type == "enter" ? "inside" : "outside");
+            $("#state").text(e.type == "enter" ? "inside" : "outside");
             pauseAnimation2 ();
             
          })
@@ -174,7 +174,7 @@ var controller = new ScrollMagic.Controller();
             startAnimation3 ();
         })
         .on("leave", function (e) {
-            // $("#state").text(e.type == "enter" ? "inside" : "outside");
+            $("#state").text(e.type == "enter" ? "inside" : "outside");
             pauseAnimation3 ();
             
          })
@@ -196,7 +196,7 @@ var controller = new ScrollMagic.Controller();
             startAnimation4 ();
         })
         .on("leave", function (e) {
-            // $("#state").text(e.type == "enter" ? "inside" : "outside");
+            $("#state").text(e.type == "enter" ? "inside" : "outside");
             pauseAnimation4 ();
             
          })

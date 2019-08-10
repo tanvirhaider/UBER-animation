@@ -75,6 +75,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/app/images/moneysign.png": {
+		"ft": 32768,
+		"iS": 2319,
+		"oA": 0,
+		"oAP": "/build/images/moneysign.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/app/images/seat-belt.png": {
 		"ft": 32768,
 		"iS": 1937,

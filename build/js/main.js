@@ -71,7 +71,7 @@ function startAnimation3() {
     animation3initiated = true;
     animation3 = new TimelineMax(); //animation3.set("#bag-fill",{clip:"rect(250px, 250px, 250px, 130px"})
 
-    animation3.to("#bag-fill", 5, {
+    animation3.to(["#bag-fill", "#moneysign"], 5, {
       css: {
         clip: "rect(80px, 250px, 250px, 130px"
       }
@@ -156,7 +156,7 @@ var scene = new ScrollMagic.Scene({
   $("#state").text(e.type == "enter" ? "inside" : "outside");
   startAnimation1();
 }).on("leave", function (e) {
-  // $("#state").text(e.type == "enter" ? "inside" : "outside");
+  $("#state").text(e.type == "enter" ? "inside" : "outside");
   pauseAnimation1();
 }).on("start end", function (e) {
   $("#lastHit").text(e.type == "start" ? "top" : "bottom");
@@ -173,7 +173,7 @@ var scene2 = new ScrollMagic.Scene({
   $("#state").text(e.type == "enter" ? "inside" : "outside");
   startAnimation2();
 }).on("leave", function (e) {
-  // $("#state").text(e.type == "enter" ? "inside" : "outside");
+  $("#state").text(e.type == "enter" ? "inside" : "outside");
   pauseAnimation2();
 }).on("start end", function (e) {
   $("#lastHit").text(e.type == "start" ? "top" : "bottom");
@@ -190,7 +190,7 @@ var scene3 = new ScrollMagic.Scene({
   $("#state").text(e.type == "enter" ? "inside" : "outside");
   startAnimation3();
 }).on("leave", function (e) {
-  // $("#state").text(e.type == "enter" ? "inside" : "outside");
+  $("#state").text(e.type == "enter" ? "inside" : "outside");
   pauseAnimation3();
 }).on("start end", function (e) {
   $("#lastHit").text(e.type == "start" ? "top" : "bottom");
@@ -207,7 +207,7 @@ var scene4 = new ScrollMagic.Scene({
   $("#state").text(e.type == "enter" ? "inside" : "outside");
   startAnimation4();
 }).on("leave", function (e) {
-  // $("#state").text(e.type == "enter" ? "inside" : "outside");
+  $("#state").text(e.type == "enter" ? "inside" : "outside");
   pauseAnimation4();
 }).on("start end", function (e) {
   $("#lastHit").text(e.type == "start" ? "top" : "bottom");

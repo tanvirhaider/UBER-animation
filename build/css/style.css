@@ -3,6 +3,33 @@ body {
   margin: 0px;
   padding: 0px; }
 
+#debug {
+  position: fixed;
+  width: 150px;
+  height: 100px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(37, 49, 34, 0.795);
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #00f7ff;
+  font-size: 12px;
+  z-index: 99999;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  #debug #title {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    margin-top: -3px; }
+
 section {
   padding-left: 50px;
   padding-right: 50px;
@@ -117,6 +144,15 @@ section {
 
 #box-3 #bag-fill {
   background-image: url(../images/bag-fill.png);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  clip: rect(250px, 250px, 250px, 130px); }
+
+#box-3 #moneysign {
+  background-image: url(../images/moneysign.png);
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
