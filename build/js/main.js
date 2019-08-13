@@ -38,23 +38,10 @@ function startAnimation2() {
   } else {
     animation2initiated = true;
     animation2 = new TimelineMax();
-    animation2.fromTo("#box-2 #star-1 .star-light", 0.25, {
-      alpha: 0
+    animation2.fromTo("#dollar", 1, {
+      scale: 0.5
     }, {
-      ease: Power0.easeNone,
-      alpha: 1
-    });
-    animation2.fromTo("#box-2 #star-2 .star-light", 0.25, {
-      alpha: 0
-    }, {
-      ease: Power0.easeNone,
-      alpha: 1
-    });
-    animation2.fromTo("#box-2 #star-3 .star-light", 0.25, {
-      alpha: 0
-    }, {
-      ease: Power0.easeNone,
-      alpha: 1
+      scale: 1
     });
     animation2.repeat(-1).yoyo(true).play();
   }
@@ -69,14 +56,18 @@ function startAnimation3() {
     animation3.play();
   } else {
     animation3initiated = true;
-    animation3 = new TimelineMax(); //animation3.set("#bag-fill",{clip:"rect(250px, 250px, 250px, 130px"})
+    animation3 = new TimelineMax();
+    animation3.fromTo("#piggy-dollar-1", 2, {
+      scale: 1,
+      alpha: 1
+    }, {
+      scale: 0.5,
+      alpha: 0
+    }); // animation3.fromTo("#piggy-dollar-2",2,{scale:1,alpha:1},{scale:0.5,alpha:1});
+    //animation3.set("#bag-fill",{clip:"rect(250px, 250px, 250px, 130px"})
+    // animation3.to(["#bag-fill","#moneysign"],5,{css:{clip:"rect(80px, 250px, 250px, 130px"}})
 
-    animation3.to(["#bag-fill", "#moneysign"], 5, {
-      css: {
-        clip: "rect(80px, 250px, 250px, 130px"
-      }
-    });
-    animation3.repeat(-1).yoyo(true).play();
+    animation3.repeat(-1).yoyo(false).play();
   }
 }
 
@@ -92,44 +83,29 @@ function startAnimation4() {
     animation4 = new TimelineMax({
       repeatDelay: 0
     });
-    animation4.to("#box-4-seat-belf", 3, {
-      css: {
-        clip: "rect(0px, 250px, 180px, 0px"
-      }
-    });
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: 3
-    }, "-=3");
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: -3
-    }, "-=2.5");
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: 3
-    }, "-=2");
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: -3
-    }, "-=1.5");
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: 3
-    }, "-=1");
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: -3
-    }, "-=0.5");
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: 3
-    });
-    animation4.to("#box-4-stearing", 0.5, {
-      ease: Power0.easeNone,
-      rotation: -3
-    });
-    animation4.repeat(-1).yoyo(true).play();
+    animation4.fromTo("#coffee-steam-1", 3, {
+      scale: 1,
+      y: 0,
+      x: 0,
+      alpha: 1,
+      rotation: 0
+    }, {
+      scale: 1.5,
+      y: -30,
+      x: 5,
+      alpha: 0,
+      rotation: 30
+    }); // animation4.to("#box-4-seat-belf",3,{css:{clip:"rect(0px, 250px, 180px, 0px"}})
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:3},"-=3")
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:-3},"-=2.5")
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:3},"-=2")
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:-3},"-=1.5")
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:3},"-=1")
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:-3},"-=0.5")
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:3})
+    // animation4.to("#box-4-stearing",0.5,{ease: Power0.easeNone,rotation:-3})
+
+    animation4.repeat(-1).yoyo(false).play();
   }
 }
 
